@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoPickerCell" id="bD9-RF-V8o" customClass="EPHorizontalPickerCollectionCell" customModule="Eatopine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-5P-Txa">
+                        <rect key="frame" x="0.0" y="5" width="90" height="90"/>
+                        <color key="backgroundColor" red="0.92156863209999995" green="0.92156863209999995" blue="0.92549020049999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="DOz-xz-ZWE"/>
+                            <constraint firstAttribute="width" constant="90" id="pv1-nd-krA"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fK-X4-bCh">
+                        <rect key="frame" x="69" y="0.0" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Brf-2m-q37"/>
+                            <constraint firstAttribute="width" constant="26" id="f1G-aF-hUB"/>
+                        </constraints>
+                        <state key="normal" image="iconRemovePhoto">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3fK-X4-bCh" secondAttribute="trailing" constant="5" id="7Lb-ee-Pjh"/>
+                <constraint firstItem="3fK-X4-bCh" firstAttribute="top" secondItem="bD9-RF-V8o" secondAttribute="top" id="9cc-NH-K7e"/>
+                <constraint firstAttribute="centerY" secondItem="F0e-5P-Txa" secondAttribute="centerY" id="Dli-qj-tMA"/>
+                <constraint firstAttribute="trailing" secondItem="3fK-X4-bCh" secondAttribute="trailing" constant="2" id="HLC-yz-YIU"/>
+                <constraint firstItem="F0e-5P-Txa" firstAttribute="leading" secondItem="bD9-RF-V8o" secondAttribute="leading" id="IeJ-Pm-Blr"/>
+                <constraint firstAttribute="centerY" secondItem="F0e-5P-Txa" secondAttribute="centerY" id="bih-zk-NFA"/>
+                <constraint firstAttribute="centerX" secondItem="F0e-5P-Txa" secondAttribute="centerX" id="qCN-Yz-jDS"/>
+                <constraint firstItem="3fK-X4-bCh" firstAttribute="top" secondItem="bD9-RF-V8o" secondAttribute="top" id="vah-sh-EDO"/>
+            </constraints>
+            <size key="customSize" width="91" height="72"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Dli-qj-tMA"/>
+                    <exclude reference="qCN-Yz-jDS"/>
+                    <exclude reference="9cc-NH-K7e"/>
+                    <exclude reference="HLC-yz-YIU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="btnRemove" destination="3fK-X4-bCh" id="F1t-b6-F7W"/>
+                <outlet property="photo" destination="F0e-5P-Txa" id="p82-C9-YCV"/>
+            </connections>
+            <point key="canvasLocation" x="523" y="353"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconRemovePhoto" width="31" height="31"/>
+    </resources>
+</document>

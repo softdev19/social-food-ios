@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CuisineModel" representedClassName="Eatopine.CuisineModel" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RestaurantModel" inverseName="cuisine" inverseEntity="RestaurantModel" syncable="YES"/>
+    </entity>
+    <entity name="NeighborhoodModel" representedClassName="Eatopine.NeighborhoodModel" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RestaurantModel" inverseName="neighborhood" inverseEntity="RestaurantModel" syncable="YES"/>
+    </entity>
+    <entity name="RestaurantModel" representedClassName="Eatopine.RestaurantModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dish_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="dish_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number_ratings" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cuisine" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CuisineModel" inverseName="restaurants" inverseEntity="CuisineModel" syncable="YES"/>
+        <relationship name="neighborhood" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NeighborhoodModel" inverseName="restaurants" inverseEntity="NeighborhoodModel" syncable="YES"/>
+    </entity>
+    <entity name="UserModel" representedClassName="Eatopine.UserModel" syncable="YES">
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserModel" positionX="-378" positionY="-174" width="128" height="120"/>
+        <element name="RestaurantModel" positionX="-396" positionY="18" width="128" height="283"/>
+        <element name="CuisineModel" positionX="-119" positionY="171" width="128" height="73"/>
+        <element name="NeighborhoodModel" positionX="-117" positionY="278" width="128" height="73"/>
+    </elements>
+</model>

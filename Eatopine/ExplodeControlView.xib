@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExplodeControlView" customModule="Eatopine" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExplodeControlView" customModule="Eatopine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="301"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTN-fB-vaV">
+                    <rect key="frame" x="258" y="-24" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="WJA-vf-yW9"/>
+                        <constraint firstAttribute="height" constant="50" id="kIX-ld-H9E"/>
+                    </constraints>
+                    <state key="normal" image="ic_explode_checkin">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="checkin:" destination="-1" eventType="touchUpInside" id="p7H-NP-xdc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XS-We-fWd">
+                    <rect key="frame" x="258" y="42" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JWo-7p-Q0l"/>
+                        <constraint firstAttribute="width" constant="50" id="h2D-bh-K5U"/>
+                    </constraints>
+                    <state key="normal" image="ic_explode_review">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="restReview:" destination="-1" eventType="touchUpInside" id="2rK-SO-aqK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-yJ-QLb">
+                    <rect key="frame" x="258" y="108" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CvN-tk-dw8"/>
+                        <constraint firstAttribute="width" constant="50" id="KNk-Vd-6ph"/>
+                    </constraints>
+                    <state key="normal" image="ic_explode_dish">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addRateDish:" destination="-1" eventType="touchUpInside" id="x4e-cy-kvm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Check in" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-XI-fDG">
+                    <rect key="frame" x="180" y="-10" width="71" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Write a review" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4N-U8-77J">
+                    <rect key="frame" x="136" y="57" width="115" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add/Rate Dish" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-cU-hTo">
+                    <rect key="frame" x="135" y="123" width="116" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="R6E-yJ-QLb" firstAttribute="top" secondItem="8XS-We-fWd" secondAttribute="bottom" constant="16" id="5yg-N0-beM"/>
+                <constraint firstItem="R6E-yJ-QLb" firstAttribute="leading" secondItem="OMG-cU-hTo" secondAttribute="trailing" constant="8" id="BCp-l0-gJF"/>
+                <constraint firstItem="8XS-We-fWd" firstAttribute="leading" secondItem="T4N-U8-77J" secondAttribute="trailing" constant="8" id="F9u-6d-hrK"/>
+                <constraint firstItem="8XS-We-fWd" firstAttribute="centerY" secondItem="T4N-U8-77J" secondAttribute="centerY" id="FXc-sn-SSX"/>
+                <constraint firstAttribute="bottom" secondItem="R6E-yJ-QLb" secondAttribute="bottom" constant="68" id="Hzq-5i-uQW"/>
+                <constraint firstItem="aTN-fB-vaV" firstAttribute="leading" secondItem="KzX-XI-fDG" secondAttribute="trailing" constant="8" id="RbP-jw-9D4"/>
+                <constraint firstAttribute="centerX" secondItem="R6E-yJ-QLb" secondAttribute="centerX" id="VG4-X6-kCA"/>
+                <constraint firstAttribute="centerX" secondItem="aTN-fB-vaV" secondAttribute="centerX" id="dCd-5U-HQp"/>
+                <constraint firstItem="KzX-XI-fDG" firstAttribute="centerY" secondItem="aTN-fB-vaV" secondAttribute="centerY" id="iQ9-jo-FZK"/>
+                <constraint firstItem="OMG-cU-hTo" firstAttribute="centerY" secondItem="R6E-yJ-QLb" secondAttribute="centerY" id="lUP-kT-VhV"/>
+                <constraint firstAttribute="centerX" secondItem="8XS-We-fWd" secondAttribute="centerX" id="tyO-L5-zaL"/>
+                <constraint firstItem="8XS-We-fWd" firstAttribute="top" secondItem="aTN-fB-vaV" secondAttribute="bottom" constant="16" id="z13-6M-bC7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="469" y="267.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_explode_checkin" width="50" height="50"/>
+        <image name="ic_explode_dish" width="50" height="50"/>
+        <image name="ic_explode_review" width="50" height="50"/>
+    </resources>
+</document>

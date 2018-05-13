@@ -1,0 +1,148 @@
+PODS:
+  - AFDateHelper (3.1.0)
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Crashlytics (3.3.4)
+  - EGOCache (2.1.3)
+  - Fabric (1.5.5):
+    - Fabric/Base (= 1.5.5)
+  - Fabric/Base (1.5.5)
+  - FBSDKCoreKit (4.4.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.4.0)
+    - FBSDKCoreKit/no-arc (= 4.4.0)
+  - FBSDKCoreKit/arc (4.4.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.4.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.4.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.4.0):
+    - FBSDKCoreKit
+  - Google/Analytics (1.0.7):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (1.0.7):
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.0)
+  - GoogleAnalytics (3.13.0)
+  - GoogleNetworkingUtilities (1.0.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.0.0)
+  - GoogleUtilities (1.1.0):
+    - GoogleSymbolUtilities (~> 1.0.0)
+  - MagicalRecord (2.3.0)
+  - MRProgress (0.8.2):
+    - MRProgress/ActivityIndicator (= 0.8.2)
+    - MRProgress/Blur (= 0.8.2)
+    - MRProgress/Circular (= 0.8.2)
+    - MRProgress/Icons (= 0.8.2)
+    - MRProgress/NavigationBarProgress (= 0.8.2)
+    - MRProgress/Overlay (= 0.8.2)
+  - MRProgress/ActivityIndicator (0.8.2):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.2):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.2):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.2)
+  - MRProgress/Icons (0.8.2)
+  - MRProgress/NavigationBarProgress (0.8.2):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.2):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.2)
+  - MRProgress/Stopable (0.8.2):
+    - MRProgress/Helper
+  - ObjectMapper (0.19)
+  - Reachability (3.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SwiftyJSON (2.3.1)
+  - SZTextView (1.2.1)
+  - TTTAttributedLabel (1.13.4)
+  - TwitterCore (1.12.0)
+  - TwitterKit (1.12.0)
+
+DEPENDENCIES:
+  - AFDateHelper
+  - AFNetworking
+  - Crashlytics
+  - EGOCache
+  - Fabric
+  - FBSDKCoreKit (<= 4.5)
+  - FBSDKLoginKit (<= 4.5)
+  - FBSDKShareKit (<= 4.5)
+  - Google/Analytics (~> 1.0.0)
+  - MagicalRecord
+  - MRProgress
+  - ObjectMapper
+  - Reachability
+  - SDWebImage
+  - SwiftyJSON
+  - SZTextView
+  - TTTAttributedLabel
+  - TwitterCore
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  AFDateHelper: 346694fc5861bdef77d8115e3825182a3fc697d2
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
+  EGOCache: f0295dbe041156acabd39021354ad1045ee49e72
+  Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
+  FBSDKCoreKit: 75bdd75c980e811db218488d99dd93b7740f4474
+  FBSDKLoginKit: 02a9254a4c132412fa03577b0d53e936d068a7fb
+  FBSDKShareKit: a42865f20ba2d1cc548c4d0f73ad22cff6377ddb
+  Google: 875f5a8ade86dd02e36586e4a54814843938c7f6
+  GoogleAnalytics: fcf1f1cad57ae1a9a53520018f0f680ceeeb8b49
+  GoogleNetworkingUtilities: 292992ab31b7b4ba32809a0e8b40e324cdfb2c0c
+  GoogleSymbolUtilities: a7b0feed1fe667c8d5e647177938d0ecd62d6948
+  GoogleUtilities: 8ed9134debe11719097881711464752900668f10
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  MRProgress: f4cfe862082418e8f542f077772283f425d6c699
+  ObjectMapper: a88114e5df20f055da63029f25cbc01014847c91
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  SZTextView: 906df45afd3c1b24fc5252088d5ef8061513c238
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  TwitterCore: a1feadb793512962003ed2bad23e846c8daa4efd
+  TwitterKit: c27e7b997cd82d5c626fcfd8b1dead1e15dac7ca
+
+COCOAPODS: 0.39.0
